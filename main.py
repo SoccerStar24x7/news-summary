@@ -1,16 +1,19 @@
-# This is a sample Python script.
+import fetch_articles
+import prompt
+import ask_llama
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+news_api_key = "4d6be2d9c963477695807c50b3c45274"
+
+query = "technology"
+
+prompt = prompt.get_prompt()
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
+# Driver Code
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    # function call
+    articles = fetch_articles.NewsFromBBC(news_api_key=news_api_key, query=query)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    response = str(ask_llama.ask(model_name="llama3.2:latest", prompt=prompt, articles=articles))
+
+    print(response)

@@ -1,7 +1,7 @@
 
-def NewsFromBBC(news_api_key, query):
+from newsapi import NewsApiClient
 
-    from newsapi import NewsApiClient
+def NewsFromBBC(news_api_key, query):
 
     newsapi = NewsApiClient(api_key=news_api_key)
     """

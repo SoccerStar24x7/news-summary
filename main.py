@@ -1,4 +1,4 @@
-ERimport fetch_articles
+import fetch_articles
 import prompt
 import ask_llama
 

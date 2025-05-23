@@ -1,10 +1,15 @@
-import fetch_articles
+ERimport fetch_articles
 import prompt
 import ask_llama
 
-news_api_key = "4d6be2d9c963477695807c50b3c45274"
+news_api_key = "ENTER NEWSAPI KEY"
 
-query = "technology"
+query = "ENTER QUERY"
+
+num_of_articles = "ENTER # OF ARTICLES"
+
+
+
 
 prompt = prompt.get_prompt()
 

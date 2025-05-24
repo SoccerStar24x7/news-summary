@@ -10,7 +10,6 @@ query = "ENTER QUERY"
 num_of_articles = int("ENTER # OF ARTICLES")
 
 
-
 prompt = prompt.get_prompt()
 
 

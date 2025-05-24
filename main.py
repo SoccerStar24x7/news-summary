@@ -2,13 +2,20 @@ import fetch_articles
 import prompt
 import ask_llama
 
+try:
+    news_api_key = "ENTER NEWSAPI KEY"
+except:
+    print("User: You must add a valid NewsAPI Key. Program is shutting off.")
+    exit(2)
 
-news_api_key = "ENTER NEWSAPI KEY"
 
 query = "ENTER QUERY"
 
-num_of_articles = int("ENTER # OF ARTICLES")
-
+try:
+    num_of_articles = int("ENTER # OF ARTICLES")
+except ValueError:
+    print("User: Please enter # of articles you want. Defaulting to 5 articles.")
+    num_of_articles = 5
 
 prompt = prompt.get_prompt()
 

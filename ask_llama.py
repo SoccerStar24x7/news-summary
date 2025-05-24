@@ -1,6 +1,5 @@
 import ollama
 
-
 def ask(model_name, prompt, articles):
     try:
         fizz = str(articles)

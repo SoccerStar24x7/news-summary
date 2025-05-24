@@ -1,4 +1,3 @@
-
 from newsapi import NewsApiClient
 
 def NewsFromBBC(news_api_key, query):

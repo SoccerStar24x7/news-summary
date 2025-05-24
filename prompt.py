@@ -1,5 +1,3 @@
-
-
 def get_prompt():
 
     summary_size = 20

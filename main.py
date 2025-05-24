@@ -2,12 +2,12 @@ import fetch_articles
 import prompt
 import ask_llama
 
+
 news_api_key = "ENTER NEWSAPI KEY"
 
 query = "ENTER QUERY"
 
 num_of_articles = int("ENTER # OF ARTICLES")
-
 
 
 

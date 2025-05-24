@@ -6,7 +6,7 @@ news_api_key = "ENTER NEWSAPI KEY"
 
 query = "ENTER QUERY"
 
-num_of_articles = "ENTER # OF ARTICLES"
+num_of_articles = int("ENTER # OF ARTICLES")
 
 
 
